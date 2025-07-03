@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI for components -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-sm">
+    <div class="bg-white rounded-2xl shadow-lg p-6">
+      <!-- Balance Card -->
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <p class="text-sm text-gray-500">Available Balance</p>
+        <h2 class="text-3xl font-bold mt-1">9400</h2>
+        <div class="flex justify-center gap-4 mt-4">
+          <button class="btn btn-outline btn-sm flex-1">Add Money</button>
+          <button class="btn btn-outline btn-sm flex-1">Cash Out</button>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="mt-6 bg-gray-50 rounded-xl shadow p-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm mb-1" for="amount">Amount</label>
+          <input id="amount" type="number" placeholder="Amount" class="input input-bordered w-full" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm mb-1" for="pin">PIN</label>
+          <input id="pin" type="password" placeholder="Password" class="input input-bordered w-full" />
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Add Money</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
