@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center min-h-screen p-4">
+  <div class="w-full max-w-sm">
+    <div class="bg-white rounded-3xl shadow-2xl p-7 transform hover:scale-105 transition-all duration-300">
+      <div class="bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-2xl shadow-xl p-6 text-center mb-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'0.08\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+        <p class="text-sm opacity-90 relative z-10">Available Balance</p>
+        <h2 class="text-4xl font-extrabold mt-2 relative z-10">$9400</h2>
+        <div class="flex justify-center gap-4 mt-6 relative z-10">
+          <button class="btn btn-outline btn-white text-white border-white hover:bg-white hover:text-teal-500 btn-sm flex-1 transform hover:translate-y-[-2px] transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Add Money
+          </button>
+          <button class="btn btn-outline btn-white text-white border-white hover:bg-white hover:text-blue-500 btn-sm flex-1 transform hover:translate-y-[-2px] transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            Cash Out
+          </button>
+        </div>
+      </div>
+
+      <form class="mt-6 bg-gray-50 rounded-2xl shadow-inner p-5 space-y-5">
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text text-gray-700 text-sm font-medium">Amount</span>
+          </label>
+          <input id="amount" type="number" placeholder="Enter amount" class="input input-bordered input-primary w-full focus:ring-2 focus:ring-blue-300 transition-shadow" />
+        </div>
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text text-gray-700 text-sm font-medium">PIN</span>
+          </label>
+          <input id="pin" type="password" placeholder="Enter your PIN" class="input input-bordered input-primary w-full focus:ring-2 focus:ring-blue-300 transition-shadow" />
+        </div>
+        <button type="submit" class="btn btn-primary w-full btn-lg mt-6 transform hover:scale-105 transition-transform duration-200 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Proceed to Add Money
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
